@@ -1,9 +1,8 @@
 com\tienda\dao\ArbolDao.class
 com\tienda\service\ArbolService.class
+com\tienda\ProjectConfig.class
 com\tienda\TiendaApplication.class
 com\tienda\domain\Arbol.class
 com\tienda\service\impl\FirebaseStorageServiceImpl.class
 com\tienda\controller\ArbolController.class
-com\tienda\service\impl\ArbolServiceImpl.class
-com\tienda\ProjectConfig.class
 com\tienda\service\FirebaseStorageService.class
