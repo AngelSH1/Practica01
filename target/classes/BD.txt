@@ -1,0 +1,20 @@
+/*Se crea la base de datos */
+drop schema if exists practica;
+drop user if exists usuario_practica;
+CREATE SCHEMA practica ;
+
+/*Se crea un usuario para la base de datos llamado "usuario_practica" y tiene la contraseña "la_Clave"*/
+create user 'usuario_practica'@'%' identified by 'la_Clave';
+
+/*Se asignan los prvilegios sobr ela base de datos practica al usuario creado */
+grant all privileges on practica.* to 'usuario_practica'@'%';
+flush privileges;
+create table practica.arbol (
+  id_arbol INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(30) NOT NULL,
+  ruta_imagen varchar(1024),
+  flor varchar(20),
+  pais_origen varchar(40),
+  PRIMARY KEY (id_arbol))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;

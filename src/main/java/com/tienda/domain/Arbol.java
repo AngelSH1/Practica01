@@ -24,16 +24,16 @@ public class Arbol implements Serializable{
     private String nombre;
     private String rutaImagen;
     private String flor;
-    private String paisOrigen;
+    private int dureza;
     
 
     public Arbol() {
     }
 
-    public Arbol(String nombre, String flor, String paisOrigen) {
+    public Arbol(String nombre, String flor, int dureza) {
         this.nombre = nombre;
         this.flor = flor;
-        this.paisOrigen = paisOrigen;
+        this.dureza = dureza;
     }
 
     
